@@ -4,7 +4,7 @@ test('le compteur est bien à 2 après deux clics sur le bouton +', async ({ pag
     await page.goto('http://localhost:5173/');
 
   // Expect a title "to contain" a substring.
-    const button = page.getByRole('button', { name: 'count is 0' });
+    const button = page.getByRole('button');
 
     await button.click();
     await button.click();
